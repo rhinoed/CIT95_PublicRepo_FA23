@@ -1,5 +1,6 @@
 # Basic Calculator
 # For CIT 95 Giraffe Academy Assignment
+# Inspired by Giraffe Academy "Basic Calculator" example
 # by Mark Edmunds
 # August 18, 2023.
 # User Input Validation
