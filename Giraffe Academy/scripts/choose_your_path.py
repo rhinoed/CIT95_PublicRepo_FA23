@@ -12,7 +12,7 @@ MAIN_STORY_STRINGS = [
     "Looking to your right you see a path which leads to a well\n"
     "Out of your pocket you pull out a die. You have travel a long way and are weary. You decide to let chance decide "
     "your path\n"
-    "You roll the die", "You reach the smoke and are horrified to see a small village engulfed in flams\n"
+    "You roll the die", "You reach the smoke and are horrified to see a small village in engulfed in flams\n"
                         "What do you run or help fight the fire\n",
     "You reach the water. Near the shore of river is a fishing pole and wood you could use for a fire\n"
     "There is also a boat. What do you do fish or take the boat \n",
@@ -30,7 +30,7 @@ WELL_OPTIONS = [
     "\nYou share the water with the farmer and horse. the farmer is grateful and offers you a ride"]
 CLOSING_STRINGS = ["\nAnd you live 'happy-ish' ever after", "\nTHE END"]
 
-
+# main program sequence loops on 'y' from user
 def main():
     ran_path = random.randint(0, 2)
     print(MAIN_STORY_STRINGS[0])
@@ -47,7 +47,9 @@ def main():
     else:
         print("Thanks for playing")
 
-
+# pah chosen by ram_path in main
+# the path determines the choices available to you
+# // To Do: need to validate user input a 1 or 2 any number >2 will crash program
 def your_path(path):
     if path == 0:
         print(MAIN_STORY_STRINGS[1])
